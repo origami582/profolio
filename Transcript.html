@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile.php</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Profile</h1>
+        <nav>
+            <a href="SOP.html">SOP</a>
+            <a href="index.html">Profile</a>
+            <a href="Transcript.html">Transcript</a>
+            <a href="Activities.html">Activities</a>
+        </nav>
+    </header>
+</div>
+<center>
+    <div class="contentt">
+    <br>
+<h1>ปพ.7</h1>
+<img src="img/ปพ3.jpg" width="25%" onclick="openModal(this.src)">
+<br>
+<br>
+<h1>ปพ.1</h1>
+<img src="img/ป1.jpg" width="25%" onclick="openModal(this.src)">
+<img src="img/ป2.jpg" width="25%" onclick="openModal(this.src)">
+    </div>
+    
+
+</center>
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+<script>
+    function openModal(src) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalImg").src = src;
+}
+
+// ปิด modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+</script>

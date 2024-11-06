@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #1c1c1e;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.header nav a {
+    color: #888888;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contentsop {
+    background-color: #333333;
+    display: grid;
+    gap: 10px;
+    
+}
+
+.contentt {
+    background-color: #333333;
+
+    width: 70%;
+    place-items: center;
+}
+.act {
+    background-color: #333333;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    place-items: center;
+}
+
+
+.profile-section, .skills-section, .plan-section, .dream-section, .activities-section, .contact-section {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 8px;
+}
+.profile-section-sop {
+    background-color: #333333;
+    padding: 600px;
+    
+}
+.Tra {
+    background-color: #333333;
+    padding: 600px;
+    
+}
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+h1 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.contact-section p, .activities-section p {
+    margin-bottom: 8px;
+}
+
+/* ส่วนกริดคอนเทนเนอร์สำหรับเกียรติบัตรและผลงานเพิ่มเติม */
+.certificates {
+    background-color: #333333;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.certificates h2 {
+    color: #00bcd4;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: #444444;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease; /* ทำให้การเปลี่ยนแปลงเงาเป็นแบบ smooth */
+}
+
+.grid-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* เพิ่มเงาเมื่อเอาเมาส์ชี้ */
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+/* คอนเทนเนอร์ใหม่สำหรับแถวและการ์ด */
+.certificates-container {
+    padding: 40px 0;
+    background-color: #1c1c1e;
+    text-align: center;
+}
+
+.certificates-title {
+    color: #00bcd4;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-card img {
+
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.grid-card {
+    background-color: #2a2a2e;
+    border-radius: 50px;
+    padding: 20px;
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; 
+    align-items: center; 
+}
+
+.grid-card img {
+    width: 50%;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+
+
+.grid-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.grid-card-title {
+    font-size: 18px;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.grid-card-description {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.modal {
+    display: none; /* ซ่อน modal เป็นค่าเริ่มต้น */
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: #bbbbbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.grid-card p {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.grid-card p strong {
+    color: #00bcd4; /* Match the color of your title */
+    font-size: 18px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
